@@ -1,0 +1,13 @@
+public static void Klick()
+{
+  mouse_event(MouseEventLeftDown, 1000, 0, 0, new System.IntPtr());
+  mouse_event(MouseEventLeftUp, 500, 0, 0, new System.IntPtr());
+}
+
+private async void button1_Click(object sender, EventArgs e)
+{
+  await Task.Delay(2000);
+  Program.Klick();
+  await Task.Delay(2000);
+  Program.klick();
+}
